@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/WORK/C++/Algorithm_Sobes/Database/out/build/GCC 16.1.0 x86_64-w64-mingw32",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/sqlite3_lib.dir/includes_C.rsp -g -o CMakeFiles\\sqlite3_lib.dir\\C_\\sqlite-amalgamation-3530000\\sqlite-amalgamation-3530000\\sqlite3.c.obj -c C:\\sqlite-amalgamation-3530000\\sqlite-amalgamation-3530000\\sqlite3.c",
+  "file": "C:/sqlite-amalgamation-3530000/sqlite-amalgamation-3530000/sqlite3.c",
+  "output": "CMakeFiles/sqlite3_lib.dir/C_/sqlite-amalgamation-3530000/sqlite-amalgamation-3530000/sqlite3.c.obj"
+},
+{
+  "directory": "C:/WORK/C++/Algorithm_Sobes/Database/out/build/GCC 16.1.0 x86_64-w64-mingw32",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Database.dir/includes_CXX.rsp -g -std=gnu++26 -o CMakeFiles\\Database.dir\\main.cpp.obj -c C:\\WORK\\C++\\Algorithm_Sobes\\Database\\main.cpp",
+  "file": "C:/WORK/C++/Algorithm_Sobes/Database/main.cpp",
+  "output": "CMakeFiles/Database.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/WORK/C++/Algorithm_Sobes/Database/out/build/GCC 16.1.0 x86_64-w64-mingw32",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Database.dir/includes_CXX.rsp -g -std=gnu++26 -o CMakeFiles\\Database.dir\\src\\app\\requester_database.cpp.obj -c C:\\WORK\\C++\\Algorithm_Sobes\\Database\\src\\app\\requester_database.cpp",
+  "file": "C:/WORK/C++/Algorithm_Sobes/Database/src/app/requester_database.cpp",
+  "output": "CMakeFiles/Database.dir/src/app/requester_database.cpp.obj"
+},
+{
+  "directory": "C:/WORK/C++/Algorithm_Sobes/Database/out/build/GCC 16.1.0 x86_64-w64-mingw32",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Database.dir/includes_CXX.rsp -g -std=gnu++26 -o CMakeFiles\\Database.dir\\src\\database\\database.cpp.obj -c C:\\WORK\\C++\\Algorithm_Sobes\\Database\\src\\database\\database.cpp",
+  "file": "C:/WORK/C++/Algorithm_Sobes/Database/src/database/database.cpp",
+  "output": "CMakeFiles/Database.dir/src/database/database.cpp.obj"
+}
+]
