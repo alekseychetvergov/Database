@@ -22,8 +22,6 @@ int main()
     {
         std::string name;
         int age;
-        /*std::cout << "Input Name and Age to add: ";
-        if (!(std::cin >> name >> age)) return 0;*/
 
         DataCore::Database &db = DataCore::Database::GetInstance();
         reqesterDatabase reqDb{};
