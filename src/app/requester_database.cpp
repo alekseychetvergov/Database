@@ -158,18 +158,6 @@ void reqesterDatabase::dateRequest(const Command command, DataCore::Database &db
                     std::cout << "Enter name and age (left " << left-- << "): ";
                     if (!(std::cin >> name >> age)) throw std::runtime_error("Incorrect input your name and age");
                     return std::make_pair(name, age); });
-            /*std::ranges::transform(users, std::begin(users),[left = countUsers](auto) mutable ->std::pair<std::string, int> {
-                if (left > 0) {
-                    std::string name; int age;
-                    std::cout << "Enter your name and age (left " << left << "): ";
-                    if (std::cin >> name >> age) {
-                        left--;
-                        return std::make_pair(name, age);
-                    }
-                    else
-                        throw std::ios_base::failure("Incorrect input your name and age");
-                }
-            });*/
             db.addUsersMassive(users);
         }
         else
