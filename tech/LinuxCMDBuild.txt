@@ -1,0 +1,55 @@
+Вот полный и последовательный список всех команд, которые я использовал в терминале Linux Debian для клонирования проекта, настройки vcpkg, сборки и запуска программы.
+Вы можете копировать и выполнять их по очереди:
+
+1. Подготовка системы (установка необходимых утилит)
+
+bash
+sudo apt update
+sudo apt install build-essential cmake curl git zip unzip tar pkg-config libsqlite3-dev -y
+
+2. Клонирование репозитория с GitHub
+
+Скачиваем сразу нужную ветку tests-gtest в вашу рабочую директорию:
+bash
+git clone -b tests-gtest https://github.com
+
+3. Установка и настройка менеджера пакетов vcpkg
+
+bash
+# Скачиваем vcpkg в домашнюю папку
+cd ~
+git clone https://github.com
+
+# Собираем исполняемый файл vcpkg
+./vcpkg/bootstrap-vcpkg.sh
+
+# Задаем переменную окружения (чтобы CMake знал, где искать vcpkg)
+export VCPKG_ROOT="$HOME/vcpkg"
+
+# (Опционально) Добавляем переменную в автозагрузку терминала, чтобы не вводить export при каждом входе:
+echo 'export VCPKG_ROOT="$HOME/vcpkg"' >> ~/.bashrc
+source ~/.bashrc
+
+4. Конфигурация и компиляция проекта
+
+bash
+# Переходим в папку со склонированным проектом
+cd ~/VSCodeProject/Database/Database
+
+# Создаем папку для сборки и заходим в нее
+mkdir build && cd build
+
+# Конфигурируем проект через CMake с указанием тулчейна vcpkg
+cmake .. -DCMAKE_TOOLCHAIN_FILE=$HOME/vcpkg/scripts/buildsystems/vcpkg.cmake
+
+# Запускаем компиляцию (сборку) проекта
+cmake --build .
+
+5. Запуск программы и тестов
+
+bash
+# Запуск основного исполняемого файла
+./Database
+
+# Запуск тестов GoogleTest
+ctest

@@ -1,2 +1,0 @@
-C:\mingw64\bin\ar.exe qc libsqlite3_lib.a "CMakeFiles/sqlite3_lib.dir/C_/sqlite-amalgamation-3530000/sqlite-amalgamation-3530000/sqlite3.c.obj"
-C:\mingw64\bin\ranlib.exe libsqlite3_lib.a

@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libDatabaseCore.a CMakeFiles/DatabaseCore.dir/src/app/requester_database.cpp.obj CMakeFiles/DatabaseCore.dir/src/database/database.cpp.obj
+C:\mingw64\bin\ranlib.exe libDatabaseCore.a

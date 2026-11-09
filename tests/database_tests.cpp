@@ -13,9 +13,9 @@
 namespace
 {
 
-DataCore::Database &database()
+DataCore::IDatabase &database()
 {
-    static DataCore::Database &instance = DataCore::Database::GetInstance(":memory:");
+    static DataCore::IDatabase &instance = DataCore::Database::GetInstance(":memory:");
     return instance;
 }
 

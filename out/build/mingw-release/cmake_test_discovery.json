@@ -1,0 +1,37 @@
+{
+  "tests": 5,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "DatabaseTests",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "AddsAndRetrievesUser",
+          "file": "C:\\WORK\\C++\\Algorithm_Sobes\\Database\\tests\\database_tests.cpp",
+          "line": 31
+        },
+        {
+          "name": "UpdatesUserAge",
+          "file": "C:\\WORK\\C++\\Algorithm_Sobes\\Database\\tests\\database_tests.cpp",
+          "line": 46
+        },
+        {
+          "name": "DeletesUser",
+          "file": "C:\\WORK\\C++\\Algorithm_Sobes\\Database\\tests\\database_tests.cpp",
+          "line": 59
+        },
+        {
+          "name": "AddsUsersInBulkAndSearchesByPartialName",
+          "file": "C:\\WORK\\C++\\Algorithm_Sobes\\Database\\tests\\database_tests.cpp",
+          "line": 71
+        },
+        {
+          "name": "ParsesCommandsCaseInsensitively",
+          "file": "C:\\WORK\\C++\\Algorithm_Sobes\\Database\\tests\\database_tests.cpp",
+          "line": 93
+        }
+      ]
+    }
+  ]
+}

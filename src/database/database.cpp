@@ -4,28 +4,29 @@
 
 #include <database/database.hpp>
 
-DataCore::Database::Database(std::string_view value) : _fileDataBaseName(value)
+DataCore::SQLiteConnection::SQLiteConnection(std::string_view fileName)
 {
-    int rc = sqlite3_open(_fileDataBaseName.c_str(), &DB);
+    const std::string path(fileName);
+    const int rc = sqlite3_open(path.c_str(), &_handle);
     if (rc != SQLITE_OK)
     {
-        // 1. Сначала сохраняем текст ошибки, пока DB еще жив
-        std::string errorMsg = "Error opening database: " + _fileDataBaseName +
-                               " | Error: " + sqlite3_errmsg(DB);
-        // 2. Закрываем дескриптор (SQLite требует этого даже при ошибке открытия)
-        if (DB)
-        {
-            sqlite3_close(DB);
-            DB = nullptr;
-        }
-        // 3. Выбрасываем исключение
-        throw ExceptDataBase(errorMsg);
+        const std::string errorMessage = "Error opening database: " + path +
+                                         " | Error: " + (_handle ? sqlite3_errmsg(_handle) : "unknown SQLite error");
+        if (_handle)
+            sqlite3_close_v2(_handle);
+        _handle = nullptr;
+        throw ExceptDataBase(errorMessage);
     }
 }
-DataCore::Database::~Database()
+
+DataCore::SQLiteConnection::~SQLiteConnection()
 {
-    if (DB)
-        sqlite3_close(DB);
+    if (_handle)
+        sqlite3_close_v2(_handle);
+}
+
+DataCore::Database::Database(std::string_view value) : DB(value)
+{
 }
 
 DataCore::Database &DataCore::Database::GetInstance(std::string_view value)

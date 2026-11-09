@@ -1,0 +1,6 @@
+DatabaseTests.AddsAndRetrievesUser 1 0.0216296
+DatabaseTests.UpdatesUserAge 1 0.0196331
+DatabaseTests.DeletesUser 1 0.0230226
+DatabaseTests.AddsUsersInBulkAndSearchesByPartialName 1 0.0197074
+DatabaseTests.ParsesCommandsCaseInsensitively 1 0.0201978
+---
