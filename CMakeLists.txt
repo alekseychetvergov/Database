@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(unofficial-sqlite3 CONFIG REQUIRED)
 
 add_library(DatabaseCore
-    src/app/requester_database.cpp
+    src/app/console_database.cpp
     src/database/database.cpp
 )
 
