@@ -1,1 +1,0 @@
- libDatabaseCore.a "vcpkg_installed/x64-mingw-dynamic/lib/manual-link/libgtest_main.dll.a" "vcpkg_installed/x64-mingw-dynamic/lib/libsqlite3.dll.a" "vcpkg_installed/x64-mingw-dynamic/lib/libgtest.dll.a" -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

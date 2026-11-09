@@ -1,5 +1,0 @@
-if(EXISTS "C:/WORK/C++/Algorithm_Sobes/Database/out/build/mingw-release/DatabaseTests[1]_tests.cmake")
-  include("C:/WORK/C++/Algorithm_Sobes/Database/out/build/mingw-release/DatabaseTests[1]_tests.cmake")
-else()
-  add_test(DatabaseTests_NOT_BUILT DatabaseTests_NOT_BUILT)
-endif()
