@@ -59,6 +59,14 @@ cmake --preset linux-x64-debug
 cmake --build --preset linux-x64-debug
 ```
 
+или 
+Сборка сразу с тестом 
+
+```bash
+cmake --preset linux-x64-release -DBUILD_TESTING=ON
+cmake --build --preset linux-x64-release
+```
+
 Для Release используйте пресет `linux-x64-release` вместо `linux-x64-debug`.
 Исполняемый файл: `out/build/linux-x64-debug/Database`.
 
